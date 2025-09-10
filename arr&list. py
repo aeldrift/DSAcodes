@@ -82,3 +82,9 @@ print("Array as bytes:", bytes_data)
 
 arr.frombytes(bytes_data)
 print("Array from bytes:", arr)
+
+
+# Typecode, itemsize and length 
+print("Typecode:", arr.typecode)   # 'i'
+print("Item size:", arr.itemsize)  # size in bytes
+print("Length:", len(arr))         # number of elements
