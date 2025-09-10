@@ -34,3 +34,11 @@ a1[1]=100 # index1: 20-->100
 a1[3]=200 # index3: 40-->200
 print("modified array is",a1) 
 # output:  array is array('i', [10, 100, 30, 200])
+
+# Access array using while loop:
+print(" using while loop")
+i=0 
+while(i<len(a1)):
+    print(a1[i])
+    i+=1
+    
