@@ -49,7 +49,7 @@ while(i<len(a1)):
 
 # Array Methods:
 
-arr = array.array('i', [10, 20, 30])
+arr = arr.array('i', [10, 20, 30])
 print(arr)  # array('i',[10,20,30])
 
 arr.append(40)           
