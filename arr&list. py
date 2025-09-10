@@ -1,2 +1,7 @@
 # Array module
+# importing array
+import array as arr
 
+# Syntax: array(typecode, initializer)
+a = arr.array('i', [1, 2, 3, 4, 5])
+print(a)   # output: 
