@@ -46,3 +46,22 @@ while(i<len(a1)):
 100
 30
 200
+
+# Array Methods:
+
+arr = array.array('i', [10, 20, 30])
+print(arr)  # array('i',[10,20,30])
+
+arr.append(40)           
+print(arr)  # array('i',[10,20,30,40])
+
+arr.insert(1, 15)       
+print(arr)  # array('i',[10,15,20,30,40])
+
+arr.remove(30)          
+print(arr) # array('i',[10,15,20,40])
+
+arr.pop()                
+print("arr after pop",arr) #array('i',[10,15,20])
+
+print(arr.tolist())      # Convert to list → [10, 15, 20]
