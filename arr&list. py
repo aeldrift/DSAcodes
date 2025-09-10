@@ -80,8 +80,5 @@ print("Buffer info:", arr.buffer_info())
 bytes_data = arr.tobytes()
 print("Array as bytes:", bytes_data)
 
-
-# Create a new empty array with same typecode
-
 arr.frombytes(bytes_data)
 print("Array from bytes:", arr)
