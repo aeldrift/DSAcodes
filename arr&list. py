@@ -78,3 +78,17 @@ print("Count of 40:", arr.count(10))
 
 print("Buffer info:", arr.buffer_info())  
 # (address,length)
+
+
+# tobytes() & frombytes() → Serialize & load
+
+bytes_data = arr.tobytes()
+print("Array as bytes:", bytes_data)
+
+
+# Create a new empty array with same typecode
+
+arr.frombytes(bytes_data)
+print("Array from bytes:", arr)
+# output: Array as bytes: b'\x14\x00\x00\x00\x0f\x00\x00\x00\n\x00\x00\x00\n\x00\x00\x00'
+Array from bytes: array('i', [20, 15, 10, 10, 20, 15, 10, 10])
