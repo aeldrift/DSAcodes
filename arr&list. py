@@ -67,8 +67,6 @@ print("arr after pop",arr) #array('i',[10,15,20])
 print(arr.tolist())      # Convert to list → [10, 15, 20]
 
 print("Index of 10 is:", arr.index(10)) # Index of 10 is: 0
-
-
 arr.reverse()
 print("After reverse:", arr)
 
@@ -79,9 +77,6 @@ print("Count of 40:", arr.count(10))
 print("Buffer info:", arr.buffer_info())  
 # (address,length)
 
-
-# tobytes() & frombytes() → Serialize & load
-
 bytes_data = arr.tobytes()
 print("Array as bytes:", bytes_data)
 
@@ -90,5 +85,3 @@ print("Array as bytes:", bytes_data)
 
 arr.frombytes(bytes_data)
 print("Array from bytes:", arr)
-# output: Array as bytes: b'\x14\x00\x00\x00\x0f\x00\x00\x00\n\x00\x00\x00\n\x00\x00\x00'
-Array from bytes: array('i', [20, 15, 10, 10, 20, 15, 10, 10])
