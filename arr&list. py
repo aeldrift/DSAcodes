@@ -28,3 +28,8 @@ for i in range(2):
 print("\nspecific index values")
 print(a1[0])   # 10
 print(a1[-1])  # 40
+
+# To modify array values:
+a1[1]=100 # index1: 20-->100
+a1[3]=200 # index3: 40-->200
+print("modified array is",a1)
