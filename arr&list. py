@@ -2,6 +2,9 @@
 # importing array
 import array as arr
 
+# or to import for all:
+# from array import *
+
 # Syntax: array(typecode, initializer)
 a = arr.array('i', [1, 2, 3, 4, 5])
 print(a)   # output: array('i', [1, 2, 3, 4, 5])
