@@ -67,3 +67,14 @@ print("arr after pop",arr) #array('i',[10,15,20])
 print(arr.tolist())      # Convert to list → [10, 15, 20]
 
 print("Index of 10 is:", arr.index(10)) # Index of 10 is: 0
+
+
+arr.reverse()
+print("After reverse:", arr)
+
+arr.append(10)
+print("Array with extra 40:", arr)
+print("Count of 40:", arr.count(10))
+
+print("Buffer info:", arr.buffer_info())  
+# (address,length)
