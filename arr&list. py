@@ -11,8 +11,15 @@ print(a)   # output: array('i', [1, 2, 3, 4, 5])
 
 # Example array: 
 a1 = arr.array('i', [10, 20, 30, 40])
+
 # Methods to access elements by
+
 # Using loop:
 print("using loop")
 for x in a1:
     print(x)
+
+# index: 
+print(" indexing")
+for i in range(2):
+    print(a1[i],end=' ')
