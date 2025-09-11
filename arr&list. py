@@ -98,3 +98,7 @@ print("Array after extend:", a)
 # Array after extend: array('i', [1, 2, 3, 4, 5, 6])
 
 # Creating an array using numpy library:
+
+import numpy as np
+a = np.array([1, 2, 3])
+print("array using numpy:", a)
