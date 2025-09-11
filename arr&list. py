@@ -91,3 +91,6 @@ print("Length:", len(arr))         # number of elements
 
 a = arr.array('i', [1, 2, 3])
 print("Original array:", a)
+
+a.extend([4, 5, 6])
+print("Array after extend:", a)
