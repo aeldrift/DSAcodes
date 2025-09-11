@@ -88,3 +88,6 @@ print("Array from bytes:", arr)
 print("Typecode:", arr.typecode)   # 'i'
 print("Item size:", arr.itemsize)  # size in bytes
 print("Length:", len(arr))         # number of elements
+
+a = arr.array('i', [1, 2, 3])
+print("Original array:", a)
