@@ -88,7 +88,7 @@ print("Array from bytes:", arr)
 print("Typecode:", arr.typecode)   # 'i'
 print("Item size:", arr.itemsize)  # size in bytes
 print("Length:", len(arr))         # number of elements
-
+import array as arr
 a = arr.array('i', [1, 2, 3])
 print("Original array:", a)
 
@@ -96,3 +96,5 @@ a.extend([4, 5, 6])
 print("Array after extend:", a) 
 # output: Original array: array('i', [1, 2, 3])
 # Array after extend: array('i', [1, 2, 3, 4, 5, 6])
+
+# Creating an array using numpy library:
