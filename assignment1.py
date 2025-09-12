@@ -11,3 +11,6 @@ list=a.tolist()
 print(list)
 print(type(list)) # None
 print("sorted list is:",sorted(list)) # [4,9,13,20]
+
+# Question:2
+''' Given a list of heterogeneous elements, write a py script to remove all the non int values from list. '''
