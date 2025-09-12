@@ -26,3 +26,6 @@ for value in list:
         list1.append(value)
 
 print("Filtered list (only integers):",list1)
+# Output: 
+# Given list is: [1, 'hello', 3.14, 5, True, '42']
+Filtered list (only integers): [1, 5]
