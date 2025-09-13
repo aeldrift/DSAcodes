@@ -65,6 +65,17 @@ print("Average of elements:", average)
 # Question:4
 ''' Write a Python script to create a list of first and terms of Fibonacci series.'''
 
+n = int(input("How many fibonacci numbers? \n", ))
+
+a, b = 0, 1
+fib_series = []
+
+for _ in range(n):
+    fib_series.append(a)
+    a, b = b, a + b
+
+print("fibonacci series upto",n,"is:", fib_series)
+
 
 # Question:5
 '''Write a Python script to create a list of first and prime numbers.'''
