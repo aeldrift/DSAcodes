@@ -42,3 +42,14 @@ if len(numbers) > 0:  # avoid ZeroDivisionError
 else:
     print("List is empty, cannot calculate average.")
 
+# using Statistics built-in library:
+
+import statistics
+
+numbers = [10, 20, 30, 40, 50]
+
+average = statistics.mean(numbers)
+print("Average of elements:", average)
+
+
+
