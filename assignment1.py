@@ -59,6 +59,6 @@ numbers = [10, 20, 30, 40, 50]
 
 average = np.mean(numbers)
 print("Average of elements:", average)
-
+# Output :Average of elements: 30.0
 
 
