@@ -53,5 +53,12 @@ print("Average of elements:", average)
 
 # Using numpy:
 
+import numpy as np
+
+numbers = [10, 20, 30, 40, 50]
+
+average = np.mean(numbers)
+print("Average of elements:", average)
+
 
 
