@@ -29,3 +29,16 @@ print("Filtered list (only integers):",list1)
 # Output: 
 # Given list is: [1, 'hello', 3.14, 5, True, '42']
 # Filtered list (only integers): [1, 5]
+
+# Question:3 
+''' Write a Python script to calculate average of elements of list. '''
+
+numbers = [1, 2, 3, 4, 5]
+print("Given list:", numbers)
+
+if len(numbers) > 0:  # avoid ZeroDivisionError
+    average = sum(numbers) / len(numbers)
+    print("Average of elements:", average)
+else:
+    print("List is empty, cannot calculate average.")
+
