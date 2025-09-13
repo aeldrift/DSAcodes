@@ -62,4 +62,7 @@ average = np.mean(numbers)
 print("Average of elements:", average)
 # Output :Average of elements: 30.0
 
+# Question:4
+'''Write a Python script to create a list of first and prime numbers.'''
+
 
