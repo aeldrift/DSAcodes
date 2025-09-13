@@ -14,4 +14,4 @@ class Person:
 
 # Example usage
 p1 = Person("Alice", 25)
-p1.show()   # Output: Name: Alice, Age: 25
+p1.show()   # Output: My name is Alice and I am 25 years old
