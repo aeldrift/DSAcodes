@@ -81,3 +81,6 @@ print("fibonacci series upto",n,"is:", fib_series)
 '''Write a Python script to create a list of first and prime numbers.'''
 
 N = 10
+
+first_numbers = list(range(1, N+1))
+prime_numbers = []
