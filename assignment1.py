@@ -80,4 +80,4 @@ print("fibonacci series upto",n,"is:", fib_series)
 # Question:5
 '''Write a Python script to create a list of first and prime numbers.'''
 
-
+N = 10
