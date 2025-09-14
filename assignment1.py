@@ -84,3 +84,6 @@ N = 10
 
 first_numbers = list(range(1, N+1))
 prime_numbers = []
+
+for num in first_numbers:
+    if num > 1:          # prime 
