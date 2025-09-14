@@ -91,3 +91,9 @@ for num in first_numbers:
             if num % i == 0:
                 break
         else:
+
+prime_numbers.append(num)
+
+print("First numbers:", first_numbers)
+print("Prime numbers:", prime_numbers)
+ 
