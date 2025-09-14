@@ -86,4 +86,8 @@ first_numbers = list(range(1, N+1))
 prime_numbers = []
 
 for num in first_numbers:
-    if num > 1:          # prime 
+    if num > 1:          # prime numbers start from 2
+        for i in range(2, num):
+            if num % i == 0:
+                break
+        else:
