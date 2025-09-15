@@ -44,3 +44,14 @@ class Circle:
     # Method to calculate circumference
     def get_circumference(self):
         return 2 * math.pi * self._radius
+
+
+c = Circle(5)
+print("Radius:", c.radius)                 # getter
+print("Area:", c.get_area())               # area = πr²
+print("Circumference:", c.get_circumference())  # 2πr
+
+c.radius = 10   # setter
+print("New Radius:", c.radius)
+print("New Area:", c.get_area())
+
