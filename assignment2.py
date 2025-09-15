@@ -55,3 +55,32 @@ c.radius = 10   # setter
 print("New Radius:", c.radius)
 print("New Area:", c.get_area())
 
+# Question: 3
+'''Define a class in rectangle with instance object length and breadth. Provide get dimension, showdimension and getaread methid in it.'''
+
+class Rectangle:
+    def __init__(self, length, breadth):
+        self.length = length
+        self.breadth = breadth
+
+    # Method to return dimensions
+    def get_dimension(self):
+        return (self.length, self.breadth)
+
+    # Method to return a formatted string (instead of printing)
+    def show_dimension(self):
+        return f"Length = {self.length}, Breadth = {self.breadth}"
+
+    # Method to calculate area
+    def get_area(self):
+        return self.length * self.breadth
+
+
+r = Rectangle(10, 5)
+
+print("Dimensions:", r.get_dimension())   # (10, 5)
+print(r.show_dimension())                 # Length = 10, Breadth = 5
+print("Area:", r.get_area())              # 50
+
+
+
