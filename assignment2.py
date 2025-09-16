@@ -16,6 +16,7 @@ class Person:
 p1 = Person("Alice", 25)
 p1.show()   # Output: My name is Alice and I am 25 years old
 
+
 # Question:2
 ''' Define class circle with instance object radius. Provide getter setter for radius also define getarea and getcurcuference methods.'''
 
