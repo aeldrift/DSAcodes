@@ -75,7 +75,6 @@ class Rectangle:
     def get_area(self):
         return self.length * self.breadth
 
-
 r = Rectangle(10, 5)
 
 print("Dimensions:", r.get_dimension())   # (10, 5)
