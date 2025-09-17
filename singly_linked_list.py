@@ -13,4 +13,5 @@ n3 = Node(30)
 
 # Link them
 n1.next = n2
-n2.next = n3  '''
+n2.next = n3 
+# Now we have: 10 -> 20 -> 30 -> None '''
