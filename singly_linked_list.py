@@ -1,6 +1,6 @@
 # Node: In py, we make s class for node
 # Example:
-''' 
+
 class Node:
     def __init__(self, data):
         self.data = data    # store value
@@ -14,7 +14,7 @@ n3 = Node(30)
 # Link them
 n1.next = n2
 n2.next = n3 
-# Now we have: 10 -> 20 -> 30 -> None '''
+# Now we have: 10 -> 20 -> 30 -> None
 
 # Operations on SLL:
 # Insertion:
