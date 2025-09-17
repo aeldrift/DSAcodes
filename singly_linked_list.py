@@ -1,5 +1,6 @@
 # Node: In py, we make s class for node
 # Example:
+''' 
 class Node:
     def __init__(self, data):
         self.data = data    # store value
@@ -12,4 +13,4 @@ n3 = Node(30)
 
 # Link them
 n1.next = n2
-n2.next = n3
+n2.next = n3  '''
