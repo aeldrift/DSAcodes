@@ -5,3 +5,7 @@ class Node:
         self.next = None
 
 # Question2:  Define a class SLL to implement singly linked list with __init__() method to create and initialize the start reference value.
+class SLL:
+    def __init__(self,start=None):
+        self.start = start
+        
