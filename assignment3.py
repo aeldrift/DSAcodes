@@ -17,3 +17,5 @@ class SLL:
 def insert_at_start(self,data):
         new_node = Node(data,self.start)
         self.start = new_node
+    
+# Question 5:  In class SLL, define a method insert_at_last() to insert an element at the end of the list.  
