@@ -1,0 +1,104 @@
+# Array module
+# importing array
+import array as arr
+
+# or to import for all:
+# from array import *
+
+# Syntax: array(typecode, initializer)
+a = arr.array('i', [1, 2, 3, 4, 5])
+print(a)   # output: array('i', [1, 2, 3, 4, 5])
+
+# Example array: 
+a1 = arr.array('i', [10, 20, 30, 40])
+
+# Methods to access elements by
+
+# Using loop:
+print("using loop")
+for x in a1:
+    print(x)
+
+# index: 
+print(" indexing")
+for i in range(2):
+    print(a1[i],end=' ')
+
+# for specific index:
+print("\nspecific index values")
+print(a1[0])   # 10
+print(a1[-1])  # 40
+
+# To modify array values:
+a1[1]=100 # index1: 20-->100
+a1[3]=200 # index3: 40-->200
+print("modified array is",a1) 
+# output:  array is array('i', [10, 100, 30, 200])
+
+# Access array using while loop:
+print("using while loop")
+i=0 
+while(i<len(a1)):
+    print(a1[i])
+    i+=1
+# output: using while loop
+10
+100
+30
+200
+
+# Array Methods:
+
+arr = arr.array('i', [10, 20, 30])
+print(arr)  # array('i',[10,20,30])
+
+arr.append(40)           
+print(arr)  # array('i',[10,20,30,40])
+
+arr.insert(1, 15)       
+print(arr)  # array('i',[10,15,20,30,40])
+
+arr.remove(30)          
+print(arr) # array('i',[10,15,20,40])
+
+arr.pop()                
+print("arr after pop",arr) #array('i',[10,15,20])
+
+print(arr.tolist())      # Convert to list → [10, 15, 20]
+
+print("Index of 10 is:", arr.index(10)) # Index of 10 is: 0
+arr.reverse()
+print("After reverse:", arr)
+
+arr.append(10)
+print("Array with extra 40:", arr)
+print("Count of 40:", arr.count(10))
+
+print("Buffer info:", arr.buffer_info())  
+# (address,length)
+
+bytes_data = arr.tobytes()
+print("Array as bytes:", bytes_data)
+
+arr.frombytes(bytes_data)
+print("Array from bytes:", arr)
+
+
+# Typecode, itemsize and length 
+print("Typecode:", arr.typecode)   # 'i'
+print("Item size:", arr.itemsize)  # size in bytes
+print("Length:", len(arr))         # number of elements
+import array as arr
+a = arr.array('i', [1, 2, 3])
+print("Original array:", a)
+
+a.extend([4, 5, 6])
+print("Array after extend:", a) 
+# output: Original array: array('i', [1, 2, 3])
+# Array after extend: array('i', [1, 2, 3, 4, 5, 6])
+
+# Creating an array using numpy library:
+
+import numpy as np
+a = np.array([1, 2, 3])
+print("array using numpy:", a)
