@@ -32,7 +32,18 @@ class SLL:
             
 # Question 6:  In class SLL, define a method insert_after() to insert an element after a specific index or value of the list.  
             
-            
-            
-            
-            
+    def insert_after(self, temp, data):
+        if temp is not None:
+            new_node = Node(data)
+            new_node.next = temp.next
+            temp.next = new_node
+        else:
+            print("The given node cannot be None")
+
+    # Method to print the linked list
+    def print_list(self):
+        temp = self.start
+        while temp is not None:
+            print(temp.data, end=" -> ")
+            temp = temp.next
+        print("None")
