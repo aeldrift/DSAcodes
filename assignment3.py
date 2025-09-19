@@ -30,6 +30,7 @@ class SLL:
                 temp = temp.next
             temp.next = new_node           # Link last node to new node
             
+# Question 6:  In class SLL, define a method insert_after() to insert an element after a specific index or value of the list.  
             
             
             
