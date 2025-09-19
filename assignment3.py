@@ -32,7 +32,6 @@ class SLL:
             
 # Question 6:  In class SLL, define a method insert_after() to insert an element after a specific index or value of the list.  
             
-# Insert after a given node
     def insert_after(self, prev_node, data):
         if prev_node is None:
             print("The given node cannot be None")
@@ -41,7 +40,16 @@ class SLL:
         new_node.next = prev_node.next
         prev_node.next = new_node
 
-    # Print the list
+# Extra: Search for a node by value
+    def search(self, key):
+        temp = self.start
+        while temp:
+            if temp.data == key:
+                return temp
+            temp = temp.next
+        return None
+
+# Print list
     def print_list(self):
         temp = self.start
         while temp:
@@ -56,9 +64,9 @@ class SLL:
 my_list = SLL()
 
 # Insert nodes
-my_list.insert_last(20)
-my_list.insert_start(10)
-my_list.insert_last(30)
+my_list.insert_at_last(20)
+my_list.insert_at_start(10)
+my_list.insert_at_last(30)
 
 print("Initial list:")
 my_list.print_list()
