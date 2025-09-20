@@ -57,10 +57,7 @@ class SLL:
             temp = temp.next
         print("None")
 
-
-# -------------------------------
 # Example usage
-# -------------------------------
 my_list = SLL()
 
 # Insert nodes
