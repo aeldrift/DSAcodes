@@ -21,3 +21,14 @@ n2.next = n3
 # At start:
 def insert_at_start(self, data):
     self.head = Node(data, self.head)
+
+# At last:
+def insert_at_last(self, data):
+        new_node = Node(data)
+        if not self.head:
+            self.head = new_node  # If list is empty
+            return
+        temp = self.head
+        while temp.next:
+            temp = temp.next     # Traverse to last node
+        temp.next = new_node
