@@ -58,19 +58,15 @@ class SLL:
         print("None")
 
 # Example usage
+# instance of SLL
 my_list = SLL()
 
-# Insert nodes
-my_list.insert_at_last(20)
-my_list.insert_at_start(10)
-my_list.insert_at_last(30)
+# Insert elements
+my_list.insert_at_start(10)              # List: 10
+my_list.insert_at_start(20)              # List: 20 -> 10
+my_list.insert_at_last(30)               # List: 20 -> 10 -> 30
+my_list.insert_after(my_list.search(20), 25)  # List: 20 -> 25 -> 10 -> 30
 
-print("Initial list:")
+# Print the list
 my_list.print_list()
 
-# Insert after a specific node (search first)
-node = my_list.search(20)
-my_list.insert_after(node, 25)
-
-print("\nAfter inserting 25 after 20:")
-my_list.print_list()
