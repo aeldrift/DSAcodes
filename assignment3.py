@@ -48,8 +48,8 @@ class SLL:
                 return temp
             temp = temp.next
         return None
-
-# Print list
+# Question 7:  In class SLL, define a method  to print all the elements of the list.  
+# Method defines: Print list
     def print_list(self):
         temp = self.start
         while temp:
