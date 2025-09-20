@@ -51,3 +51,22 @@ def delete_at_end(self):
                 temp = temp.next
             temp.next = None  # Remove reference to last node
 
+# Delete by value:
+def delete_by_value(self, value):
+        if self.is_empty():
+            print("List is empty. Nothing to delete.")
+            return
+
+        # If first node contains the value
+        if self.head.data == value:
+            self.head = self.head.next
+            return
+
+        temp = self.head
+        while temp.next and temp.next.data != value:
+            temp = temp.next
+
+        if temp.next is None:
+            print(f"Value {value} not found in the list.")
+        else:
+            temp.next = temp.next.next
