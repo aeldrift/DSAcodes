@@ -32,3 +32,22 @@ def insert_at_last(self, data):
         while temp.next:
             temp = temp.next     # Traverse to last node
         temp.next = new_node
+# Deletion:
+# At start:
+def delete_at_start(self):
+        if self.is_empty():
+            print("List is empty. Nothing to delete.")
+        else:
+            self.head = self.head.next  # Move head to next node
+# At last:
+def delete_at_end(self):
+        if self.is_empty():
+            print("List is empty. Nothing to delete.")
+        elif self.head.next is None:
+            self.head = None  # Only one node
+        else:
+            temp = self.head
+            while temp.next.next:  # Stop at second last node
+                temp = temp.next
+            temp.next = None  # Remove reference to last node
+
