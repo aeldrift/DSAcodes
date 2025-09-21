@@ -94,3 +94,13 @@ def delete_at_end(self):
             temp.next = None  # Remove reference to last node
 
 # Question 10:  In class SLL, define a method deleye() to delete an element after a specific index or value of the list. 
+
+# Delete by value:
+def delete_by_value(self, value):
+        if self.is_empty():
+            print("List is empty. Nothing to delete.")
+            return
+
+        # If first node contains the value
+        if self.head.data == value:
+            self.head = 
