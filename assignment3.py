@@ -80,3 +80,15 @@ def delete_at_start(self):
             self.head = self.head.next  # Move head to next node
 
 # Question 9:  In class SLL, define a method delete() to delete an element from the last
+
+# At last:
+def delete_at_end(self):
+        if self.is_empty():
+            print("List is empty. Nothing to delete.")
+        elif self.head.next is None:
+            self.head = None  # Only one node
+        else:
+            temp = self.head
+            while temp.next.next:  # Stop at second last node
+                temp = temp.next
+            temp.next = None  # Remove reference to last node
