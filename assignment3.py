@@ -71,3 +71,10 @@ my_list.insert_after(my_list.search(20), 25)  # List: 20 -> 25 -> 10 -> 30
 my_list.print_list()
 
 # Question 8:  In class SLL, define a method delete() to delete an element from the start.
+
+# At start:
+def delete_at_start(self):
+        if self.is_empty():
+            print("List is empty. Nothing to delete.")
+        else:
+            self.head = self.head.next  # Move head to next node
