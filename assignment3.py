@@ -92,3 +92,5 @@ def delete_at_end(self):
             while temp.next.next:  # Stop at second last node
                 temp = temp.next
             temp.next = None  # Remove reference to last node
+
+# Question 10:  In class SLL, define a method deleye() to delete an element after a specific index or value of the list. 
