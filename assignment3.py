@@ -103,4 +103,14 @@ def delete_by_value(self, value):
 
         # If first node contains the value
         if self.head.data == value:
-            self.head = 
+            self.head= self.head.next
+            return
+
+        temp = self.head
+        while temp.next and temp.next.data != value:
+            temp = temp.next
+
+        if temp.next is None:
+            print(f"Value {value} not found in the list.")
+        else:
+            temp.next = temp.next.next
