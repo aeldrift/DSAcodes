@@ -70,3 +70,4 @@ my_list.insert_after(my_list.search(20), 25)  # List: 20 -> 25 -> 10 -> 30
 # Print the list
 my_list.print_list()
 
+# Question 8:  In class SLL, define a method delete() to delete an element from the start.
