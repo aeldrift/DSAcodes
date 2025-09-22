@@ -70,3 +70,5 @@ def delete_by_value(self, value):
             print(f"Value {value} not found in the list.")
         else:
             temp.next = temp.next.next
+
+
